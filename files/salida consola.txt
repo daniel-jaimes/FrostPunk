@@ -1,0 +1,181 @@
+No hay un edificio en esta parcela
+Persona NO added
+Edificio added
+Edificio added
+Edificio added
+La parcela no está vacía
+Persona added
+Persona added
+Persona added
+Persona NO added
+Persona added
+Persona added
+Persona NO added
+Persona NO added
+Persona NO added
+Persona NO added
+--- Mostrando Personas ---
+Persona [nombre=Arnaldo, circle=0, distrito=1]
+Persona [nombre=Maria, circle=0, distrito=1]
+Persona [nombre=Paula, circle=0, distrito=1]
+Persona [nombre=Francisco, circle=0, distrito=2]
+Persona [nombre=Anton, circle=1, distrito=1]
+--------------------------
+Edificio added
+Persona asignada
+No se puede mover de un refugio a otro
+Persona asignada
+--- Mostrando Ciudad ---
+Circulo 0
+
+	Seccion: 1 calor: 4 Edificio: Refugio: 
+		Persona [nombre=Arnaldo]
+		Persona [nombre=Maria]
+		Persona [nombre=Paula]
+
+	Seccion: 2 calor: 4 Edificio: Refugio: 
+		Persona [nombre=Francisco]
+
+	Seccion: 3 calor: 4 Edificio: Cocina: 
+		Persona [nombre=Arnaldo]
+
+	Seccion: 4 calor: 3 Edificio: vacio
+	Seccion: 5 calor: 3 Edificio: vacio
+	Seccion: 6 calor: 3 Edificio: vacio
+	Seccion: 7 calor: 3 Edificio: vacio
+	Seccion: 8 calor: 3 Edificio: vacio
+	Seccion: 9 calor: 3 Edificio: vacio
+	Seccion: 10 calor: 3 Edificio: vacio
+
+Circulo 1
+
+	Seccion: 1 calor: 4 Edificio: Refugio: 
+		Persona [nombre=Anton]
+
+	Seccion: 2 calor: 3 Edificio: vacio
+	Seccion: 3 calor: 3 Edificio: vacio
+	Seccion: 4 calor: 3 Edificio: vacio
+	Seccion: 5 calor: 3 Edificio: vacio
+	Seccion: 6 calor: 3 Edificio: vacio
+	Seccion: 7 calor: 3 Edificio: vacio
+	Seccion: 8 calor: 3 Edificio: vacio
+	Seccion: 9 calor: 3 Edificio: vacio
+	Seccion: 10 calor: 3 Edificio: vacio
+
+Circulo 2
+
+	Seccion: 1 calor: 3 Edificio: vacio
+	Seccion: 2 calor: 3 Edificio: vacio
+	Seccion: 3 calor: 3 Edificio: vacio
+	Seccion: 4 calor: 3 Edificio: vacio
+	Seccion: 5 calor: 3 Edificio: vacio
+	Seccion: 6 calor: 3 Edificio: vacio
+	Seccion: 7 calor: 3 Edificio: vacio
+	Seccion: 8 calor: 3 Edificio: vacio
+	Seccion: 9 calor: 3 Edificio: vacio
+	Seccion: 10 calor: 3 Edificio: vacio
+
+Circulo 3
+
+	Seccion: 1 calor: 3 Edificio: vacio
+	Seccion: 2 calor: 3 Edificio: vacio
+	Seccion: 3 calor: 3 Edificio: vacio
+	Seccion: 4 calor: 3 Edificio: vacio
+	Seccion: 5 calor: 3 Edificio: vacio
+	Seccion: 6 calor: 3 Edificio: vacio
+	Seccion: 7 calor: 3 Edificio: vacio
+	Seccion: 8 calor: 3 Edificio: vacio
+	Seccion: 9 calor: 3 Edificio: vacio
+	Seccion: 10 calor: 3 Edificio: vacio
+
+Circulo 4
+
+	Seccion: 1 calor: 3 Edificio: vacio
+	Seccion: 2 calor: 3 Edificio: vacio
+	Seccion: 3 calor: 3 Edificio: vacio
+	Seccion: 4 calor: 3 Edificio: vacio
+	Seccion: 5 calor: 3 Edificio: vacio
+	Seccion: 6 calor: 3 Edificio: vacio
+	Seccion: 7 calor: 3 Edificio: vacio
+	Seccion: 8 calor: 3 Edificio: vacio
+	Seccion: 9 calor: 3 Edificio: vacio
+	Seccion: 10 calor: 3 Edificio: vacio
+
+------------------------
+--- Mostrando Ciudad ---
+Circulo 0
+
+	>> Seccion: 1 calor: 0 Edificio: Refugio: 
+		Persona [nombre=Arnaldo]
+		Persona [nombre=Maria]
+		Persona [nombre=Paula]
+
+	>> Seccion: 2 calor: 0 Edificio: Refugio: 
+		Persona [nombre=Francisco]
+
+	Seccion: 3 calor: 0 Edificio: Cocina: 
+		Persona [nombre=Arnaldo]
+
+	Seccion: 4 calor: -1 Edificio: vacio
+	Seccion: 5 calor: -1 Edificio: vacio
+	Seccion: 6 calor: -1 Edificio: vacio
+	Seccion: 7 calor: -1 Edificio: vacio
+	Seccion: 8 calor: -1 Edificio: vacio
+	Seccion: 9 calor: -1 Edificio: vacio
+	Seccion: 10 calor: -1 Edificio: vacio
+
+Circulo 1
+
+	>> Seccion: 1 calor: 0 Edificio: Refugio: 
+		Persona [nombre=Anton]
+
+	Seccion: 2 calor: -1 Edificio: vacio
+	Seccion: 3 calor: -1 Edificio: vacio
+	Seccion: 4 calor: -1 Edificio: vacio
+	Seccion: 5 calor: -1 Edificio: vacio
+	Seccion: 6 calor: -1 Edificio: vacio
+	Seccion: 7 calor: -1 Edificio: vacio
+	Seccion: 8 calor: -1 Edificio: vacio
+	Seccion: 9 calor: -1 Edificio: vacio
+	Seccion: 10 calor: -1 Edificio: vacio
+
+Circulo 2
+
+	Seccion: 1 calor: -1 Edificio: vacio
+	Seccion: 2 calor: -1 Edificio: vacio
+	Seccion: 3 calor: -1 Edificio: vacio
+	Seccion: 4 calor: -1 Edificio: vacio
+	Seccion: 5 calor: -1 Edificio: vacio
+	Seccion: 6 calor: -1 Edificio: vacio
+	Seccion: 7 calor: -1 Edificio: vacio
+	Seccion: 8 calor: -1 Edificio: vacio
+	Seccion: 9 calor: -1 Edificio: vacio
+	Seccion: 10 calor: -1 Edificio: vacio
+
+Circulo 3
+
+	Seccion: 1 calor: -1 Edificio: vacio
+	Seccion: 2 calor: -1 Edificio: vacio
+	Seccion: 3 calor: -1 Edificio: vacio
+	Seccion: 4 calor: -1 Edificio: vacio
+	Seccion: 5 calor: -1 Edificio: vacio
+	Seccion: 6 calor: -1 Edificio: vacio
+	Seccion: 7 calor: -1 Edificio: vacio
+	Seccion: 8 calor: -1 Edificio: vacio
+	Seccion: 9 calor: -1 Edificio: vacio
+	Seccion: 10 calor: -1 Edificio: vacio
+
+Circulo 4
+
+	Seccion: 1 calor: -1 Edificio: vacio
+	Seccion: 2 calor: -1 Edificio: vacio
+	Seccion: 3 calor: -1 Edificio: vacio
+	Seccion: 4 calor: -1 Edificio: vacio
+	Seccion: 5 calor: -1 Edificio: vacio
+	Seccion: 6 calor: -1 Edificio: vacio
+	Seccion: 7 calor: -1 Edificio: vacio
+	Seccion: 8 calor: -1 Edificio: vacio
+	Seccion: 9 calor: -1 Edificio: vacio
+	Seccion: 10 calor: -1 Edificio: vacio
+
+------------------------
