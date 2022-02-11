@@ -1,7 +1,9 @@
 package manager;
 
-public class Controller {
-    public synchronized static void init() {
+import model.City;
 
+public class Controller {
+    private City city = new City();
+    public synchronized static void init() {
     }
 }
