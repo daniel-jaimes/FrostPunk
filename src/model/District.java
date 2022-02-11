@@ -10,4 +10,11 @@ public class District {
     public void setEdificeIfNull(Edifice edifice) {
         if (this.edifice == null) this.edifice = edifice;
     }
+
+    @Override
+    public String toString() {
+        return "Seccion " + id +
+                ", edifice=" + edifice +
+                ']';
+    }
 }

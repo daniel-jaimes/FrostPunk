@@ -1,0 +1,5 @@
+package utils;
+
+public enum Actions {
+    ADD_EDIFICE, MODIFY_TEMPERATURE, ADD_PERSON, PRINT_REFUGE_PERSONS, PRINT_CITY_INFO
+}

@@ -1,12 +1,18 @@
 package model;
 
-import java.util.Set;
+import java.util.*;
 
 public class City {
-    private Set<Person> people;
+    private List<Person> people;
     private int temperature;
+    private Circle[] circles;
     public City(){
         temperature = 0;
+        circles = new Circle[]{
+                new Circle(1),
+                new Circle(2),
+
+        };
     }
     public void addPerson(Person person){
         people.add(person);

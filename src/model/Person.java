@@ -7,4 +7,12 @@ public class Person {
     private boolean sick;
     private boolean busy;
 
+    @Override
+    public String toString() {
+        return "Person [" +
+                "nombre=" + name +
+                ", circle=" + idCircle +
+                ", distrito=" + idDistrict +
+                ']';
+    }
 }
