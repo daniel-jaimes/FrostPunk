@@ -10,31 +10,29 @@ public class Utils {
     /*
         Check the syntax of action line
     */
-    public static Actions returnWhichActionIs(String line) throws LogicException {
-
-        String[] elementsLine = line.trim().split(" ");
+    public static Actions whichActionIs(String[] line) throws LogicException {
         //ACTION "S" - PRINT PERSON IN REFUGES
-        if (checkSyntaxActionPrintPersonsInRefuges(elementsLine)) {
+        if (checkSyntaxActionPrintPersonsInRefuges(line)) {
             return Actions.PRINT_REFUGE_PERSONS;
         }
         //ACTION "C" - PRINT ALL INFORMATION OF CITY
-        if(checkSyntaxActionPrintInfoCity(elementsLine)){
+        if(checkSyntaxActionPrintInfoCity(line)){
             return Actions.PRINT_CITY_INFO;
         }
         //ACCION "T valor" - MODIFY TEMPERATURE
-        if(checkSyntaxActionModifyTemperature(elementsLine)){
+        if(checkSyntaxActionModifyTemperature(line)){
             return Actions.MODIFY_TEMPERATURE;
         }
         //ACCION "<circle, distrito> NombreEdificio" - ADD EDIFICE
-        if(checkSyntaxActionAddEdifice(elementsLine)){
+        if(checkSyntaxActionAddEdifice(line)){
             return Actions.ADD_EDIFICE;
         }
         //ACCION "+ NombrePersona <circle, distrito>" - ADD PERSON TO REFUGE
-        if(checkSyntaxActionAddPersonaToRefuge(elementsLine)){
+        if(checkSyntaxActionAddPersonaToRefuge(line)){
             return Actions.ADD_PERSON_TO_REFUGE;
         }
         //ACCION " > <circleRefugio, distritoRefugio> <circleDestino, distritoDestino>" - ADD JOB ONE PERSONE
-        if (checkSyntaxActionAddJobPerson(elementsLine)) {
+        if (checkSyntaxActionAddJobPerson(line)) {
             return Actions.ADD_JOB_PERSON;
         }
 
@@ -56,8 +54,7 @@ public class Utils {
     }
 
     private static boolean checkSyntaxActionAddPersonaToRefuge(String[] elementsLine) {
-        return elementsLine.length == 3 && elementsLine[0].length() == 1
-                && elementsLine[0].equals("+") && isCordenate(elementsLine[2]);
+        return elementsLine.length == 3 && elementsLine[0].equals("+") && isCordenate(elementsLine[2]);
     }
 
     private static boolean checkSyntaxActionAddEdifice(String[] elementsLine) {
@@ -75,16 +72,15 @@ public class Utils {
         return true;
     }
     private static boolean isCordenate(String cordenate){
-        cordenate
+        cordenate = cordenate
                 .trim()
-                .replaceAll(">", "")
-                .replaceAll("<", "")
-                .replaceAll(",", "");
+                .replaceAll(",", "")
+                .substring(1, 3);
 
         return isDigit(cordenate);
     }
     private static boolean isCorrectName(String nameEdifice){
-        return Arrays.asList(Buildings.values()).contains(Buildings.valueOf(nameEdifice));
+        return Arrays.asList(Buildings.values()).contains(Buildings.valueOf(nameEdifice.toUpperCase()));
     }
 
 }
