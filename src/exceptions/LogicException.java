@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public class LogicException extends Exception{
-    public static final int INCORRECT_CREDENTIALS = 0;
-    public static final int JUMP_OR_CHANGE = 1;
+    public static final int INCORRECT_ACTION = 0;
+    public static final int INCORRECT_NAME_EDIFICE = 1;
     private int value;
     private List<String> message = Arrays.asList(
-            "<< Credenciales incorrectas >>",
-            "<< Se ha lanzado un carta de cambio o de salto para que no juegues. >>"
+            "<< La accion es incorrecta. >>",
+            "<< El nombre del edificio no existe >>"
     );
     public LogicException(int value){
         this.value = value;
