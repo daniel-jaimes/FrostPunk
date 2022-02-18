@@ -12,7 +12,7 @@ public class Controller {
         readInput();
     }
 
-    private static void readInput() {
+    private void readInput() {
         Reader rd;
         String line;
         try {
@@ -25,34 +25,56 @@ public class Controller {
         }
     }
 
-    private static void execute(String line) {
+    private void execute(String line) {
         try {
-            selectorAction(line);
+            selectorAction(line.split(" "));
         } catch (LogicException e) {
             System.out.println(e.getMessage());
         }
     }
 
-    private static void selectorAction(String line) throws LogicException {
-        switch (Utils.returnWhichActionIs(line)){
-            default:
-                System.out.println(line);
-                break;
-            /*
+    private void selectorAction(String[] action) throws LogicException {
+        switch (Utils.whichActionIs(action)){
             case ADD_EDIFICE:
+                addEdifice(action);
                 break;
             case MODIFY_TEMPERATURE:
+                modifyTemperature(Integer.parseInt(action[1]));
                 break;
             case ADD_PERSON_TO_REFUGE:
+                addPersonToRefuge(action);
                 break;
             case PRINT_REFUGE_PERSONS:
+                printRefugePersons();
                 break;
             case PRINT_CITY_INFO:
+                printCityInformation();
                 break;
             case ADD_JOB_PERSON:
+                addJobPerson(action);
                 break;
-             */
         }
+    }
+    //ACTIONS
+    private void addJobPerson(String[] action) {
+    }
+
+    private void printCityInformation() {
+    }
+
+    private void printRefugePersons() {
+    }
+
+    private void addPersonToRefuge(String[] action) {
+
+    }
+
+    private void modifyTemperature(int temperatureModification) {
+        city.modifyTemperature(temperatureModification);
+    }
+
+    private void addEdifice(String[] action) {
+
     }
 
 }
