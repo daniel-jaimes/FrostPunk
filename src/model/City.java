@@ -17,4 +17,7 @@ public class City {
     public void addPerson(Person person){
         people.add(person);
     }
+    public void modifyTemperature(int temperatureModifaction){
+        this.temperature = this.temperature + temperatureModifaction;
+    }
 }
