@@ -19,19 +19,19 @@ public enum Buildings {
     public static Edifice makeEdifice(String typeEdifice) throws LogicException {
         switch (Buildings.valueOf(typeEdifice)){
             case REFUGIO:
-                return new Edifice(REFUGIO, REFUGIO.initalHeat, REFUGIO.minHeat);
+                return new Edifice(REFUGIO.toString(), REFUGIO.initalHeat, REFUGIO.minHeat);
             case COCINA:
-                return new Edifice(COCINA, COCINA.initalHeat, COCINA.minHeat);
+                return new Edifice(COCINA.toString(), COCINA.initalHeat, COCINA.minHeat);
             case ASERRADERO:
-                return new Edifice(ASERRADERO, ASERRADERO.initalHeat, ASERRADERO.minHeat);
+                return new Edifice(ASERRADERO.toString(), ASERRADERO.initalHeat, ASERRADERO.minHeat);
             case CAVANA_CAZA:
-                return new Edifice(CAVANA_CAZA, CAVANA_CAZA.initalHeat, CAVANA_CAZA.minHeat);
+                return new Edifice(CAVANA_CAZA.toString(), CAVANA_CAZA.initalHeat, CAVANA_CAZA.minHeat);
             case MINA_CARBON:
-                return new Edifice(MINA_CARBON, MINA_CARBON.initalHeat, MINA_CARBON.minHeat);
+                return new Edifice(MINA_CARBON.toString(), MINA_CARBON.initalHeat, MINA_CARBON.minHeat);
             case MOTOR_VAPOR:
-                return new Edifice(MOTOR_VAPOR, MOTOR_VAPOR.initalHeat, MOTOR_VAPOR.minHeat);
+                return new Edifice(MOTOR_VAPOR.toString(), MOTOR_VAPOR.initalHeat, MOTOR_VAPOR.minHeat);
             case PUESTO_MEDICO:
-                return new Edifice(PUESTO_MEDICO, PUESTO_MEDICO.initalHeat, PUESTO_MEDICO.minHeat);
+                return new Edifice(PUESTO_MEDICO.toString(), PUESTO_MEDICO.initalHeat, PUESTO_MEDICO.minHeat);
             default:
                 throw new LogicException(LogicException.INCORRECT_NAME_EDIFICE);
         }
