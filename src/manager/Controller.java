@@ -3,6 +3,7 @@ package manager;
 import dao.Reader;
 import exceptions.ExecutionException;
 import exceptions.LogicException;
+import model.Buildings;
 import model.City;
 import utils.Utils;
 
@@ -73,8 +74,11 @@ public class Controller {
         city.modifyTemperature(temperatureModification);
     }
 
-    private void addEdifice(String[] action) {
-
+    private void addEdifice(String[] action) throws LogicException {
+        int circleId = Integer.parseInt(action[0].substring(1, 2));
+        int districtId = Integer.parseInt(action[0].substring(3, 4));
+        String nameEdifice = action[1];
+        city.getCircle(circleId).getDistrict(districtId).setEdificeIfNull(Buildings.makeEdifice(nameEdifice));
     }
 
 }
