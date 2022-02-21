@@ -1,7 +1,6 @@
 package model;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 
 public class Edifice {
@@ -13,7 +12,7 @@ public class Edifice {
         this.name = name;
         this.currentHeat = currentHeat;
         this.minHeat = minHeat;
-        people = new HashSet<>();
+        people = new TreeSet<>();
     }
 
     public String getName() {
