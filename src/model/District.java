@@ -1,20 +1,18 @@
 package model;
 
+import exceptions.LogicException;
+
 public class District {
-    private Integer id;
     private Edifice edifice;
     public District(){
         edifice = null;
     }
-
-    public void setEdificeIfNull(Edifice edifice) {
-        if (this.edifice == null) this.edifice = edifice;
-    }
-
-    @Override
-    public String toString() {
-        return "Seccion " + id +
-                ", edifice=" + edifice +
-                ']';
+    public void setEdificeIfNull(Edifice edifice) throws LogicException {
+        if (this.edifice == null) {
+            this.edifice = edifice;
+            throw new LogicException(LogicException.EDIFICE_CORRECTED_ADDED);
+        } else {
+            throw new LogicException(LogicException.PLOT_IS_NOT_EMPTY);
+        }
     }
 }
