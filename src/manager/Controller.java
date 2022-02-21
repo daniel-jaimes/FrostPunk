@@ -18,14 +18,14 @@ public class Controller {
         try {
             rd = new Reader("entrada");
             while(!(line = rd.readLine()).equals("")){
-                execute(line);
+                executeLogic(line);
             }
         } catch (ExecutionException e) {
             System.out.println(e.getMessage());
         }
     }
 
-    private void execute(String line) {
+    private void executeLogic(String line) {
         try {
             selectorAction(line.split(" "));
         } catch (LogicException e) {
