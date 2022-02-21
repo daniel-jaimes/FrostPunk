@@ -17,7 +17,7 @@ public enum Buildings {
     }
 
     public static Edifice makeEdifice(String typeEdifice) throws LogicException {
-        switch (Buildings.valueOf(typeEdifice)){
+        switch (Buildings.valueOf(typeEdifice.toUpperCase())){
             case REFUGIO:
                 return new Edifice(REFUGIO.toString(), REFUGIO.initalHeat, REFUGIO.minHeat);
             case COCINA:
