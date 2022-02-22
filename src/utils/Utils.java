@@ -49,7 +49,7 @@ public class Utils {
 
     private static boolean checkSyntaxActionAddJobPerson(String[] elementsLine) {
         return elementsLine.length == 3 && elementsLine[0].length() == 1
-                && elementsLine[0].equals("+") && isCordenate(elementsLine[1])
+                && elementsLine[0].equals(">") && isCordenate(elementsLine[1])
                 && isCordenate(elementsLine[2]);
     }
 
@@ -62,7 +62,8 @@ public class Utils {
     }
 
     private static boolean checkSyntaxActionModifyTemperature(String[] elementsLine) {
-        return elementsLine.length == 2 && elementsLine[0].length() == 1 && isDigit(elementsLine[1]);
+        return elementsLine.length == 2 && elementsLine[0].length() == 1
+                && (elementsLine[1].charAt(0) == '-' ? isDigit(elementsLine[1].substring(1)) : isDigit(elementsLine[1]));
     }
 
     private static boolean isDigit( String number){

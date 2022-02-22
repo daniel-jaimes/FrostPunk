@@ -18,8 +18,11 @@ public class Circle {
             add(new District());
         }};
     }
-    public District getDistrict(int id){
+    protected District getDistrict(int id){
         return districts.get(id - 1);
     }
 
+    public ArrayList<District> getDistricts() {
+        return districts;
+    }
 }
